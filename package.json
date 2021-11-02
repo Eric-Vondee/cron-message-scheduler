@@ -1,0 +1,35 @@
+{
+  "name": "cron-message-scheduler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --build tsconfig.json",
+    "start": "node -r module-alias/register ./dist",
+    "dev": "nodemon index.ts"
+  },
+  "repository": "https://github.com/Eric-Vondee/cron-message-scheduler.git",
+  "author": "Eric-Vondee",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.24.0",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mailgun-js": "^0.22.0",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "node-cron": "^3.0.0",
+    "nodemailer": "^6.7.0"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.0",
+    "@types/express": "^4.17.13",
+    "@types/mailgun-js": "^0.22.12",
+    "@types/node": "^16.11.6",
+    "@types/node-cron": "^3.0.0",
+    "nodemon": "^2.0.14",
+    "ts-node": "^10.4.0",
+    "tsconfig-paths": "^3.11.0",
+    "tslint": "^6.1.3",
+    "typescript": "^4.4.4"
+  }
+}
